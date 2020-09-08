@@ -34,10 +34,22 @@ input {
     width: 60%;
     margin: auto;
 }
+.flex{
+    display: flex;
+    position: relative;
+    /* margin: auto; */
+    margin-left: 25%;
+    width: 70%;
+}
+
 .center .out{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    flex-direction: column;
     justify-content: space-evenly;
+    height: 50vh;
+    width: 50%;
+    margin: auto;
 }
 
 .headline{
