@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    color: #313030;
+    font-size: 15px;
     /* background-color: #dcedf0; */
 }
 
@@ -9,56 +11,103 @@
     grid-template-columns: 1fr 1fr;
 }
 .container {
-    margin-top: 10%;
+    margin-top: 15vh;
 }
 .card {
     background: #fdffff;
     /* height: 50vh; */
-    box-shadow: 5px 5px 5px #bbbbbb;
+    box-shadow: 8px 8px 50px 8px #bbbbbb;
+    z-index: 0;
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
 }
 
-input {
+.input {
     width: 300px;
     border-radius: 5px;
-    /* height: 40px; */
+    height: 5px;
+    border: 3px solid #a7a7a7;
+    /* -webkit-appearance: none;
+    outline : none;
+    background-color: #e9e8e8; */
+    
+
 }
-
-
+/* .input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 10px;
+    border: 1px solid #575757;
+    border-radius: 5px;
+    background-color: #575757;
+    
+    
+    
+} */
 
 .center {
     display: flex;
     /* align-items: center; */
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50vh;
+    height: 65vh;
     width: 60%;
     margin: auto;
+    /* background-color: pink; */
+    position: relative;
 }
-.flex{
+.cardd{
+    height: 100%;
+    position: relative;
+}
+.cardd .flex-out{
     display: flex;
     position: relative;
     /* margin: auto; */
-    margin-left: 25%;
-    width: 70%;
+    margin-left: 15%;
+    /* background-color: blue; */
+    height: 100%;
+    width: 60%;
+   justify-content: space-between;
 }
 
-.center .out{
+.out {
     display: flex;
     /* align-items: center; */
     flex-direction: column;
     justify-content: space-evenly;
     height: 50vh;
-    width: 50%;
+    /* width: 0%; */
     margin: auto;
+    /* background-color: green; */
+}
+.right{
+    width: 40%;
+    /* background-color: red; */
+    height: 50vh;
+}
+.left{
+    width: 100%;
 }
 
 .headline{
     margin-bottom: 10px;
 }
+.hl-mt{
+    /* padding-top: 20px; */
+}
+.headline span{
+    position: absolute;
+    /* margin-top: 10px; */
+    font-size: 0.5em ;
+}
+.xxx{
+    position: absolute;
+}
 
 .line{
     margin-top: 20px;
     margin-bottom: 20px;
+    /* background-color: red; */
 }
 select{
     width: 300px;

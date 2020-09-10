@@ -3,39 +3,46 @@ import React from 'react';
 
 export default class OutputData extends React.Component {
     render() {
-        //   debugger;
+       let {totalSum, monthPayment, overPayment} = this.props.data;
+       let {prettify} = this.props;
         return (
             <div>
-                <div className="card ">
+                <div className="cardd ">
 
-                    <div className="flex">
+                    <div className="flex-out">
+                    
                         <div className="center out left">
-                            <div className="line">
-                                <div className="headline">Общая сумма : </div>
-                                {/* <input className='input' type="text" value = {this.props.data.totalSum} readOnly /> */}
+                        <div className="line">
+                                <div className="headline">Сумма кредита:   </div>                                                                 
                             </div>
                             <div className="line">
-                                <div className="headline">Ежемесячная плата :   </div>
-                                {/* <input className='input' type="text" value = {this.props.data.monthPayment} readOnly/> */}
+                                <div className="headline hl-mt">Общая сумма выплаты: <br></br> <span>(с учетом переплаты, без первоначального взноса)</span>  </div>                              
                             </div>
                             <div className="line">
-                                <div className="headline">Общая переплата :</div>
-                                {/* <input className='input' type="text" value = {this.props.data.overPayment} readOnly /> */}
+                                <div className="headline">Ежемесячная плата:   </div>                          
+                                                                       
+                            </div>
+                            <div className="line">
+                                <div className="headline">Общая переплата:</div>
+                              
+                               
+                                
                             </div>
                         </div>
-                        <div className="center out">
+                        <div className="center right">
                             <div className="line">
-                                <div className="headline">{this.props.data.totalSum}</div>
-                                {/* <input className='input' type="text" value = {this.props.data.totalSum} readOnly /> */}
+                                <div className="headline">{prettify(totalSum-overPayment) } ₽</div>
                             </div>
                             <div className="line">
-                                <div className="headline">{this.props.data.monthPayment} </div>
-                                {/* <input className='input' type="text" value = {this.props.data.monthPayment} readOnly/> */}
+                                <div className="headline">{prettify(totalSum - 0) } ₽</div>
                             </div>
                             <div className="line">
-                                <div className="headline">{this.props.data.overPayment}</div>
-                                {/* <input className='input' type="text" value = {this.props.data.overPayment} readOnly /> */}
+                                <div className="headline">{prettify(monthPayment - 0)} ₽</div>
                             </div>
+                            <div className="line">
+                                <div className="headline">{prettify(overPayment - 0)} ₽</div>
+                            </div>
+                            
 
 
                         </div>
