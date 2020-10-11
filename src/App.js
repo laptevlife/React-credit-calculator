@@ -70,8 +70,10 @@ export default class App extends React.Component {
 
   prettify = (num)=> {
       let n = num.toString();
+      // console.log( n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' '))
       return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
   }
+  
 
 
 
@@ -81,7 +83,8 @@ export default class App extends React.Component {
     // console.log('state', this.state);
     // this.calculation(inputData)
     // this.updateData(inputData)
-
+// debugger;
+// console.log(this.prettify(35.6755));
 
     return (
       <div className="container grid card">

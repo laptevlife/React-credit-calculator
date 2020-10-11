@@ -7,11 +7,12 @@ export default class InputData extends React.Component {
     
 
     //функции получают данные из инпутов и передают полученные значения в updatedata
-    inputSum = (e) => {
+    inputSum = (e)=> {
         let sum = Number(e.target.value) ;
         this.props.updatedata({creditSum : sum})
         // console.log(sum)
     }
+ 
     inputFirstPay = (e)=>{
         let firstpay = Number(e.target.value);
         // console.log('firstpay', typeof(firstpay))
@@ -28,15 +29,17 @@ export default class InputData extends React.Component {
     }
     comparison = (creditSum, firstPay)=>{
         if(creditSum<firstPay){
-            console.log('zalupa')
+            console.log('error < 0')
             
         }
     }
     render() {
+        // debugger;
     let {creditSum, firstPay, persents } = this.props.inputdata;
     let {prettify} = this.props;
     this.comparison(creditSum, firstPay);
-    // this.inputFirstPay(0);
+  
+
         return (
             <div>
                 <div className="cardd ">
