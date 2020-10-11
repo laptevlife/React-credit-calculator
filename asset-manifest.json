@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-credit-calculator/static/css/main.f473b38a.chunk.css",
+    "main.js": "/React-credit-calculator/static/js/main.09a3e9b8.chunk.js",
+    "main.js.map": "/React-credit-calculator/static/js/main.09a3e9b8.chunk.js.map",
+    "runtime-main.js": "/React-credit-calculator/static/js/runtime-main.758c9686.js",
+    "runtime-main.js.map": "/React-credit-calculator/static/js/runtime-main.758c9686.js.map",
+    "static/js/2.36e095e7.chunk.js": "/React-credit-calculator/static/js/2.36e095e7.chunk.js",
+    "static/js/2.36e095e7.chunk.js.map": "/React-credit-calculator/static/js/2.36e095e7.chunk.js.map",
+    "index.html": "/React-credit-calculator/index.html",
+    "precache-manifest.f074b8c00e8db03fbde1f3826d141fac.js": "/React-credit-calculator/precache-manifest.f074b8c00e8db03fbde1f3826d141fac.js",
+    "service-worker.js": "/React-credit-calculator/service-worker.js",
+    "static/css/main.f473b38a.chunk.css.map": "/React-credit-calculator/static/css/main.f473b38a.chunk.css.map",
+    "static/js/2.36e095e7.chunk.js.LICENSE.txt": "/React-credit-calculator/static/js/2.36e095e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.758c9686.js",
+    "static/js/2.36e095e7.chunk.js",
+    "static/css/main.f473b38a.chunk.css",
+    "static/js/main.09a3e9b8.chunk.js"
+  ]
+}
